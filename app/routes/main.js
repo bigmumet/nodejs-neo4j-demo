@@ -3,7 +3,7 @@ var cheerio = require('cheerio');
 
 module.exports=function(app, db) {
   app.get('/', function(req, res) {
-    res.send('welcome to index');
+    res.send('welcome to index 3');
   }),
   app.get('/save', function(req, res) {
       var url = 'http://alumni.amikom.ac.id/index.php/alumni/page/180';
@@ -42,7 +42,6 @@ module.exports=function(app, db) {
               db.cypher({
                 query: `CREATE (n:Person {number: '${numberPerson}', name: '${namePerson}'}) RETURN n`
               }, function (err, results) {
-                console.log(results);
                 if (! err)
                   queryStatus = true;
                 return queryStatus;
