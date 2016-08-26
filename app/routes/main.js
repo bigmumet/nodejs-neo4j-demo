@@ -2,6 +2,9 @@ var request = require('request');
 var cheerio = require('cheerio');
 
 module.exports=function(app, db) {
+  app.get('/', function(req, res) {
+    res.send('welcome to index');
+  }),
   app.get('/save', function(req, res) {
       var url = 'http://alumni.amikom.ac.id/index.php/alumni/page/180';
 
