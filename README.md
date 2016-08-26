@@ -27,5 +27,5 @@ This project is sample using nodejs to connect neo4j database.
 1. Clone this repo : git clone https://github.com/bigmumet/nodejs-neo4j-demo.git
 2. Update Dependencies : npm update --depth=0
 3. Run server.js using nodemon : nodemon server.js
-4. Open Browser : [127.0.0.1:3000] (127.0.0.1:3000)
-5. Try this : [127.0.0.1:3000/save] (127.0.0.1:3000/save)
+4. Open Browser : [127.0.0.1:3000] (http://127.0.0.1:3000)
+5. Try this : [127.0.0.1:3000/save] (http://127.0.0.1:3000/save)
